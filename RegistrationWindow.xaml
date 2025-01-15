@@ -1,12 +1,11 @@
-﻿<Window x:Class="WindowCreationGushin.MainWindow"
+﻿<Window x:Class="WindowCreationGushin.RegistrationWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WindowCreationGushin"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="600" Background="LightBlue"
-        WindowStartupLocation="CenterScreen">
+        Title="RegistrationWindow" Height="400" Width="600" Background="LightBlue">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
@@ -18,7 +17,8 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <TextBlock FontSize="20"  Grid.Column="1" Text="Авторизация" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <TextBlock FontSize="20"  Grid.Column="1" Text="Регистрация" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
         <StackPanel Grid.Row="1" Margin="0,26,0,118" Grid.Column="1" Grid.RowSpan="2">
             <TextBlock Grid.Column="1"  Text="Логин" Width="187"/>
@@ -32,14 +32,12 @@
             Grid.Row="2"
             VerticalAlignment="Top"
             HorizontalAlignment="Center">
-            <Button
-                Content="Войти"
-                Margin="5" Width="100"
-                Click="LoginButton"/>
+            
             <Button
                 Content="Регистрация"
-                Margin="5" Width="100"
+                Width="100"
                 Click="RegistrationButton"/>
         </StackPanel>
+
     </Grid>
 </Window>

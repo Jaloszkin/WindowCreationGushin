@@ -10,33 +10,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WindowCreationGushin
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для RegistrationWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class RegistrationWindow : Window
     {
-        public MainWindow()
+        public RegistrationWindow()
         {
             InitializeComponent();
         }
 
         private void RegistrationButton(object sender, RoutedEventArgs e)
         {
-            var regisrationWindow = new RegistrationWindow();
-            regisrationWindow.ShowDialog();
-        }
-
-        private void LoginButton(object sender, RoutedEventArgs e)
-        {
-            var menuWindow = new MenuWindow();
-            App.Current.MainWindow = menuWindow;    
-            menuWindow.Show();
-            Close();
+            Close();    
         }
     }
 }
